@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fun Chat Room 😎</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+</head>
+<body>
+
+<div class="login" id="loginBox">
+    <h2>Join Chat Room</h2>
+    <input type="text" id="username" placeholder="Enter your name">
+    <button onclick="joinChat()">Join</button>
+</div>
+
+<div class="chat" id="chatBox">
+    <h2>🔥 Chat Room</h2>
+    <div id="messages"></div>
+
+    <div class="input-box">
+        <input type="text" id="message" placeholder="Type a message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
